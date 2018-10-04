@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Elm App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="main">Loading App...</div>
+    <script>
+        Elm.App.init({
+            node: document.getElementById('main'),
+            flags: Math.floor(Math.random()*0x0FFFFFFF)
+        })
+    </script>
+</body>
+</html>
